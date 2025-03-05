@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-container ul li a:hover {
+    color: #ff0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, #000, #008000);
+    text-align: center;
+}
+
+/* Main Image */
+.hero-main-img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #0f0;
+    animation: pulse 2s infinite;
+}
+
+/* Image Carousel */
+.carousel-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button */
+.hero .btn {
+    margin-top: 20px;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #00ff00;
+}
+
+/* Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/* Center the carousel properly */
+/* #imageCarousel {
+    width: 100%;
+    max-width: 150px; 
+    margin: auto;
+} */
+
+/* Ensure images are fully visible */
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 150px !important;
+    max-height: 350px; /* Adjust height as needed */
+    object-fit: contain; /* Prevents cropping */
+}
+
+.carousel-control-prev{
+    left: 150px !important;
+}
+.benefit-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: rgba(0, 255, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.benefit:hover {
+    transform: scale(1.1);
+}
+

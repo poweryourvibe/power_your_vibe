@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power Your Vibe - The Ultimate Energy Drink">
+    <title>Power Your Vibe</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Power Your Vibe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container py-5">
+        <div class="row align-items-center">
+            <!-- Left Section: Text & Button -->
+            <div class="col-md-4 text-center text-md-start">
+                <h2>Recharge. Refuel. Reignite!</h2>
+                <p>Experience the rush of pure energy.</p>
+                <a href="#order" class="btn btn-success btn-lg">Get Yours Now</a>
+            </div>
+            
+            <!-- Center: Main Image -->
+            <div class="col-md-4 text-center">
+                <img src="images/can.jpeg" alt="Energy Drink Can" class="hero-main-img">
+            </div>
+
+            <!-- Right: Rotating 3D Image Carousel -->
+            <div class="col-lg-4 col-md-5 text-center">
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/multiple_tray.png" class="d-block w-100 carousel-img" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/water_drop.JPG" class="d-block w-100 carousel-img" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/tray.jpg" class="d-block w-100 carousel-img" alt="Image 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="about text-center py-5" id="about">
+        <div class="container">
+            <h2>About Power Your Vibe</h2>
+            <p>Power Your Vibe is your go-to energy drink to push your limits and keep you energized throughout the day.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits py-5" id="benefits">
+        <div class="container text-center">
+            <h2>Why Choose Us?</h2>
+            <div class="row justify-content-center benefit-boxes">
+                <div class="col-md-3 col-sm-6 benefit">
+                    <i class="fa-solid fa-bolt"></i> Instant Energy
+                </div>
+                <div class="col-md-3 col-sm-6 benefit">
+                    <i class="fa-solid fa-fire"></i> Enhanced Performance
+                </div>
+                <div class="col-md-3 col-sm-6 benefit">
+                    <i class="fa-solid fa-dumbbell"></i> Zero Sugar
+                </div>
+                <div class="col-md-3 col-sm-6 benefit">
+                    <i class="fa-solid fa-glass-martini"></i> Refreshing Taste
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing text-center py-5" id="pricing">
+        <div class="container">
+            <h2>Special Offer</h2>
+            <p><span class="strike">MRP: ₹60</span> <span class="discount">Offer Price: ₹50</span></p>
+            <p>Follow us on Instagram for ₹5 extra off!</p>
+            <a href="https://www.instagram.com/power_your_vibe/" target="_blank" class="btn btn-success">Follow Now</a>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order text-center py-5" id="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <p>Contact us at <strong>9664875760</strong> / <strong>7208130372</strong> to place your order.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2025 Power Your Vibe. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
